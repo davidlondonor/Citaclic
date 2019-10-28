@@ -1,0 +1,27 @@
+.App-header {
+    background-color: #2B3137;
+    height: 337px;
+    display: flex;
+    color: #FFFFFF;
+  }
+  .text-header{
+    padding: 200px 118px 20px 100px;
+    color: #FFFFFF;
+    opacity: 0.92;
+    font-size: 35px;
+    width: 400px;
+  }
+  .citaclic{
+    background-color: #EBEBEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+  }
+  .text-citaclic{
+    padding: 15px 118px 300px 100px;
+    color: #2B3137;
+    opacity: 0.92;
+    font-size: 20px;
+    width: 400px;
+  }

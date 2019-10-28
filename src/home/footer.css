@@ -1,0 +1,33 @@
+.footer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    background-color: #FFFFFF;
+  }
+  .text-footer{
+    padding: 20px 17px 0px 20px;
+    cursor: pointer;
+    text-align: left;
+    color: #111111;
+    opacity: 1;
+  }
+  .links, .copyright{
+    display: flex;
+  }
+  .text-copyright{
+    padding: 0px 17px 0px 20px;
+    color: #A1AAB8;
+    opacity: 1;
+  }
+  .social-media{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 64%;
+    align-items: center;
+  }
+  .social-media img{
+    padding-right: 10px;
+    cursor: pointer;
+  }

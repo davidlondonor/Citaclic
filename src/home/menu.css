@@ -1,0 +1,10 @@
+.menu{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav{
+    color: #111111;
+    padding: 25px 20px;
+    cursor: pointer;
+    text-decoration: none;
+  }
