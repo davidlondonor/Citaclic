@@ -1,5 +1,7 @@
+import {Link} from 'react-router-dom';
 import React from 'react';
 import './login.css';
+
 
 const Login = () => {
     return(
@@ -19,7 +21,7 @@ const Login = () => {
                         <button className="boton" type="submit">Iniciar sesión</button>
                     </div>
                     <div className="login-text">
-                        <a target="_blank" href="#checkIn">Regístrate</a>
+                        <Link to='/registro'>Regístrate</Link>
                     </div>
                 </form>
             </div>

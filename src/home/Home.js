@@ -1,10 +1,9 @@
 import React from 'react';
-import Header from './header';
-import Login from './login';
-import AboutUS from './aboutUS';
-import Help from './help';
-import DeveloperCards from './developerCards';
-import CheckIn from './checkIn';
+import Header from './header/header';
+import Login from './login/login';
+import AboutUS from './aboutUS/aboutUS';
+import Help from './help/help';
+import DeveloperCards from './developerCards/developerCards';
 
 const Home = () => {
     return (
@@ -12,7 +11,6 @@ const Home = () => {
           <Header />
           <Login />
           <AboutUS />
-          <CheckIn />
           <Help />
           <DeveloperCards />
        </div>
