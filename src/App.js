@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Menu from './home/menu';
 import Footer from './home/footer';
@@ -24,6 +25,7 @@ const App = () => {
         </Switch>
         <Footer />  
      </div>
+
   );
 }
 
