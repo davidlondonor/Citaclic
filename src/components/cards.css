@@ -1,7 +1,9 @@
-.container,
-.cardDoc {
+.containerCards {
+  background: tomato;
+}
+.cardCards {
   display: flex;
-  background-color: #ffffff;
+  background-color: white;
   align-content: flex-start;
   width: 220px;
   height: 275px;
@@ -9,36 +11,36 @@
   flex-direction: column;
   padding: 5px;
 }
-.photoDoc {
+.photoCards {
   color: yellow;
   width: 220px;
   height: 167px;
   margin: 0;
 }
-.nameDoc {
+.nameCards {
   margin: 0;
   font-size: 1.5rem;
   padding: 2px;
   color: #111111;
 }
-.profesionalDoc {
+.profesionalCards {
   font: 0.7em sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 1px;
   color: #2c7ff7;
 }
-.locatedDoc {
+.locatedCards {
   margin: 0;
   padding: 1;
   color: #888888;
   font-weight: 400;
 }
-.detailsDoc {
+.detailsCards {
   font: 0.9em sans-serif;
   font-weight: 600;
 }
-.starDoc {
+.starCards {
   margin: 0;
   color: #149bf3;
 }

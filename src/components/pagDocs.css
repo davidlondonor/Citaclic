@@ -1,0 +1,56 @@
+.containerDoc {
+  background-color: brown;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+.appointment {
+  height: 821px;
+  width: 680;
+  background-color: tan;
+  width: 60vw;
+  padding: 20px;
+}
+.cardCardsDoc {
+  background-color: white;
+  /* align-content: flex-start; */
+  width: 290px;
+  height: 275px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.photoCardsDoc {
+  background-color: yellow;
+  width: 290px;
+  height: 220px;
+  margin: 0;
+}
+.nameCardsDoc {
+  margin: 0;
+  font-size: 1.7rem;
+  padding: 2px;
+  color: #111111;
+}
+.profesionalCardsDoc {
+  font: 1.2em sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 1px;
+  color: #2c7ff7;
+}
+.locatedCardsDoc {
+  margin: 0;
+  padding: 1;
+  color: #888888;
+  font-weight: 400;
+  font: 1em sans-serif;
+}
+.starCardsDoc {
+  margin: 0;
+  color: #149bf3;
+  width: 28px;
+  height: 28px;
+}
