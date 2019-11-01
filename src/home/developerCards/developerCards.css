@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-evenly;
   background-color: #F7F7FA;
-  padding-top: 50px ;
   height: 350px;
-  }
+  align-items: center;
+}
 .card{
   background-color: #FFFFFF;
   width: 150px;
@@ -12,6 +12,7 @@
 }
 .name{
   color: #484848;
+  margin-left: 5px;
   opacity: 1;
   font-size: 18px;
   margin-bottom: 4px;
@@ -21,4 +22,5 @@
   opacity: 1;
   font-size: 14px;
   margin: 0;
+  margin-left: 5px;
 }
