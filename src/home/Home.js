@@ -11,8 +11,8 @@ const Home = () => {
           <Header />
           <Login />
           <AboutUS />
-          <Help />
           <DeveloperCards />
+          <Help />
        </div>
     );
   }

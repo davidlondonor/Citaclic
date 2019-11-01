@@ -8,7 +8,6 @@
     border-radius: 5px;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #EBEBEB;
-    opacity: 1;
     position: absolute;
   }
   .form{
@@ -21,8 +20,6 @@
     background: #FAFAFA;
     border: 1px solid #EBEBEB;
     border-radius: 3px;
-    opacity: 1;
-    cursor: pointer;
   }
   .password, .username{
     flex-direction: column;
@@ -41,7 +38,6 @@
     border-radius: 5px;
     color: #FFFFFF;
     width: 258px;
-    opacity: 1;
     border: 0;
     cursor: pointer;
   }
@@ -62,7 +58,6 @@
   .text-label{
     padding-bottom: 10px;
     color: #888888;
-    opacity: 1;
   }
   .password-text{
     padding-top: 10px;
@@ -71,3 +66,59 @@
     text-decoration: none;
     color: #2C7FF7;
   }
+  .container-modal{
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.text-modal{
+    width: 240px;
+    height: 45px;
+    text-align: left;
+    font-size: 12px;
+    color: #888888;
+    margin-bottom: 15px;
+}
+.text-modal-email{
+    text-align: left;
+    font-size: 12px;
+    color: #888888;
+    margin-bottom: 5px;   
+}
+.input-modal{
+    width: 230px;
+    height: 30px;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.boton-volver{
+    width: 90px;
+    height: 30px;
+    background: #E0E1E2;   
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 45px;
+    margin-top: 10px;
+    border: none;
+}
+.boton-confirmar{
+    background: #3576F8;
+    height: 30px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    width: 90px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+
+}
+.inside-modal{
+    margin-left: 25px;
+}
