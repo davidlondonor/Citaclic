@@ -1,0 +1,26 @@
+.dayxDay {
+  display: flex;
+  top: 240px;
+  left: 425px;
+  /* width: 681px; */
+  height: 59px;
+  justify-content: space-around;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+}
+.dayxDayDetails {
+  /* flex-grow: 1 1 1 1; */
+  /* /* align-self: center; */
+  text-align: left;
+  font: Medium 16px/20px Inter;
+  color: #888888;
+  opacity: 1;
+  height: 0.25rem;
+  /* background: blue; */
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.dayxDayDetails:hover {
+  background-color: blue;
+}

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { MdStarBorder } from "react-icons/md";
 import "./pagDocs.css";
+import Hour from "./Hour";
+import Day from "./Day";
 
 class PagDocs extends Component {
   //   state = {};
@@ -28,17 +30,16 @@ class PagDocs extends Component {
         </div>
 
         <div className='appointment'>
-          <p className='priceDoc'>Valor de la consulta</p>
           <h3 className='avalibleDoc'>Disponibilidad</h3>
-          <p>Fechas</p>
+          <p className='priceDoc'>Valor de la consulta</p>
+          <Day />
           <div>
-            <p className='hourDoc'>8:30</p>
-            <p className='hourDoc'>9:00</p>
-            <p className='hourDoc'>10:00</p>
-            <p className='hourDoc'>11:00</p>
-            <p className='hourDoc'>12:00</p>
-            <p className='hourDoc'>13:00</p>
-            <p className='hourDoc'>14:00</p>
+            <Hour />
+            <Hour />
+            <Hour />
+            <Hour />
+            <Hour />
+            <Hour />
           </div>
         </div>
       </div>

@@ -1,13 +1,15 @@
 .containerCards {
   background: tomato;
+  display: flexbox;
+  flex-direction: row-reverse;
 }
 .cardCards {
-  display: flex;
   background-color: white;
   align-content: flex-start;
   width: 220px;
   height: 275px;
   border-radius: 5px;
+  display: flex;
   flex-direction: column;
   padding: 5px;
 }
