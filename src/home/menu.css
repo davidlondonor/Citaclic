@@ -8,3 +8,10 @@
     cursor: pointer;
     text-decoration: none;
   }
+  .img-logo{
+    display: flex;
+    align-self: center;
+    width: 120px;
+    height: 50px;
+    padding-right: 820px;
+  }

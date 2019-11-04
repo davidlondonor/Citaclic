@@ -17,6 +17,7 @@
     text-align: center;
     margin: 0;
     color: #FFF;
+    cursor: pointer;
   }
   .img-help{
     display: flex;
