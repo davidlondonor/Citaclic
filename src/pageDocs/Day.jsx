@@ -6,13 +6,30 @@ class Day extends Component {
   render() {
     return (
       <div className='dayxDay'>
-        <div className='dayxDayDetails'>Lun 23 Sep</div>
-        <div className='dayxDayDetails'>Mar 24 Sep</div>
-        <div className='dayxDayDetails'>Mie 25 Sep</div>
-        <div className='dayxDayDetails'>Jue 26 Sep</div>
-        <div className='dayxDayDetails'>Vie 27 Sep</div>
-        <div className='dayxDayDetails'>Sáb 28 Sep</div>
-        <div className='dayxDayDetails'>Dom 29 Sep</div>
+        <a href='' className='dayxDayDetails'>
+          Lun 23 Sep
+        </a>
+        <a href='' className='dayxDayDetails'>
+          Mar 24 Sep
+        </a>
+        <a href='' className='dayxDayDetails'>
+          Mar 24 Sep
+        </a>
+        <a href='' className='dayxDayDetails'>
+          Mie 25 Sep
+        </a>
+        <a href='' className='dayxDayDetails'>
+          Jue 26 Sep
+        </a>
+        <a href='' className='dayxDayDetails'>
+          Vie 27 Sep
+        </a>
+        <a href='' className='dayxDayDetails'>
+          Sáb 28 Sep
+        </a>
+        <a href='' className='dayxDayDetails'>
+          Dom 29 Sep
+        </a>
       </div>
     );
   }

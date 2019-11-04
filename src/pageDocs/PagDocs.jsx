@@ -3,12 +3,15 @@ import { MdStarBorder } from "react-icons/md";
 import "./pagDocs.css";
 import Hour from "./Hour";
 import Day from "./Day";
+import Menu from "../home/menu";
+import Footer from "../home/footer";
 
 class PagDocs extends Component {
   //   state = {};
   render() {
     return (
       <div className='containerDoc'>
+        <Menu />
         <div className='containerappointment'>
           <div className='cardCardsDoc'>
             <div className='photoCardsDoc'>
@@ -33,15 +36,21 @@ class PagDocs extends Component {
           <h3 className='avalibleDoc'>Disponibilidad</h3>
           <p className='priceDoc'>Valor de la consulta</p>
           <Day />
-          <div>
+          <div className='hourDocs'>
             <Hour />
             <Hour />
             <Hour />
             <Hour />
             <Hour />
             <Hour />
+            <Hour />
+            <Hour />
+            <Hour />
+            <Hour />
+            {/* <Hour /> */}
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

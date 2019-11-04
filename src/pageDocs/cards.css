@@ -1,7 +1,13 @@
+.containerDoc {
+  background-color: khaki;
+  flex-wrap: wrap;
+  align-content: center;
+}
 .containerCards {
   background: tomato;
   display: flexbox;
   flex-direction: row-reverse;
+  width: 900px;
 }
 .cardCards {
   background-color: white;
@@ -12,6 +18,7 @@
   display: flex;
   flex-direction: column;
   padding: 5px;
+  margin: 2px;
 }
 .photoCards {
   color: yellow;

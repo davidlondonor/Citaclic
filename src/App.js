@@ -4,7 +4,9 @@ import Footer from "./home/footer";
 import Home from "./home/Home";
 import { Switch, Route } from "react-router-dom";
 import SignUP from "./home/signUP/SignUP";
-import Cards from "./components/cards";
+import Cards from "./pageDocs/Cards";
+import PageDoc from "./pageDocs/PagDocs";
+import { Link } from "react-router-dom";
 
 import "./App.css";
 
@@ -22,7 +24,10 @@ const App = () => {
         <Route component={Error} />
       </Switch>
       <Cards />
+      <PageDoc />
       <Footer />
+      <Link to='/agendas'>cards</Link>
+      <Link to='/doctores'>doctores</Link>
     </div>
   );
 };
