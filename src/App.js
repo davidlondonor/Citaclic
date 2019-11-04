@@ -18,16 +18,15 @@ const App = () => {
   return (
     <div className='App'>
       <Menu />
+
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/registro' component={SignUP} />
+        <Route exact path='/doctores' component={PageDoc} />
+        <Route exact path='/Cards' component={Cards} />
         <Route component={Error} />
       </Switch>
-      <Cards />
-      <PageDoc />
       <Footer />
-      <Link to='/agendas'>cards</Link>
-      <Link to='/doctores'>doctores</Link>
     </div>
   );
 };
