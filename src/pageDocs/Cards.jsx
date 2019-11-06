@@ -1,220 +1,50 @@
 import React, { Component } from "react";
 import "./cards.css";
 import { MdStarBorder } from "react-icons/md";
-import Menu from "../home/menu";
-import Footer from "../home/footer";
 
 class Cards extends Component {
-  state = {};
-  render() {
-    return (
-      <div className='containerDoc'>
-        <Menu />
-        <div className='cardCards'>
-          <div className='photoCards'>
-            <img src='https://i.ibb.co/gT0S0KG/foto-4.png' alt=''></img>
-          </div>
-          <div className='detailsDCards'>
-            <h4 className='nameCards'>Manuela Arango</h4>
-            <h6 className='profesionalCards'>Dermartóloga</h6>
-            <h6 className='locatedCards'>Poblado</h6>
-            <p className='starCards'>
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-            </p>
-          </div>
-        </div>
-        {/* tarjeta 2 */}
-        <div className='cardCards'>
-          <div className='photoCards'>
-            <img src='https://i.ibb.co/gT0S0KG/foto-4.png' alt=''></img>
-          </div>
-          <div className='detailsDCards'>
-            <h4 className='nameCards'>Manuela Arango</h4>
-            <h6 className='profesionalCards'>Dermartóloga</h6>
-            <h6 className='locatedCards'>Poblado</h6>
-            <p className='starCards'>
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-            </p>
-          </div>
-        </div>
-        {/* tarjeta 3 */}
-        <div className='cardCards'>
-          <div className='photoCards'>
-            <img src='https://i.ibb.co/gT0S0KG/foto-4.png' alt=''></img>
-          </div>
-          <div className='detailsDCards'>
-            <h4 className='nameCards'>Manuela Arango</h4>
-            <h6 className='profesionalCards'>Dermartóloga</h6>
-            <h6 className='locatedCards'>Poblado</h6>
-            <p className='starCards'>
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-            </p>
-          </div>
-        </div>
-        {/* tarjeta 4 */}
-        <div className='cardCards'>
-          <div className='photoCards'>
-            <img src='https://i.ibb.co/gT0S0KG/foto-4.png' alt=''></img>
-          </div>
-          <div className='detailsDCards'>
-            <h4 className='nameCards'>Manuela Arango</h4>
-            <h6 className='profesionalCards'>Dermartóloga</h6>
-            <h6 className='locatedCards'>Poblado</h6>
-            <p className='starCards'>
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-            </p>
-          </div>
-        </div>
-        {/* tarjeta 5 */}
-        <div className='cardCards'>
-          <div className='photoCards'>
-            <img src='https://i.ibb.co/gT0S0KG/foto-4.png' alt=''></img>
-          </div>
-          <div className='detailsDCards'>
-            <h4 className='nameCards'>Manuela Arango</h4>
-            <h6 className='profesionalCards'>Dermartóloga</h6>
-            <h6 className='locatedCards'>Poblado</h6>
-            <p className='starCards'>
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-            </p>
-          </div>
-        </div>
-        {/* tarjeta 6 */}
-        <div className='cardCards'>
-          <div className='photoCards'>
-            <img src='https://i.ibb.co/gT0S0KG/foto-4.png' alt=''></img>
-          </div>
-          <div className='detailsDCards'>
-            <h4 className='nameCards'>Manuela Arango</h4>
-            <h6 className='profesionalCards'>Dermartóloga</h6>
-            <h6 className='locatedCards'>Poblado</h6>
-            <p className='starCards'>
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-            </p>
-          </div>
-        </div>
-        {/* tarjeta 7 */}
-        <div className='cardCards'>
-          <div className='photoCards'>
-            <img src='https://i.ibb.co/gT0S0KG/foto-4.png' alt=''></img>
-          </div>
-          <div className='detailsDCards'>
-            <h4 className='nameCards'>Manuela Arango</h4>
-            <h6 className='profesionalCards'>Dermartóloga</h6>
-            <h6 className='locatedCards'>Poblado</h6>
-            <p className='starCards'>
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-            </p>
-          </div>
-        </div>
-        {/* tarjeta 8 */}
-        <div className='cardCards'>
-          <div className='photoCards'>
-            <img src='https://i.ibb.co/gT0S0KG/foto-4.png' alt=''></img>
-          </div>
-          <div className='detailsDCards'>
-            <h4 className='nameCards'>Manuela Arango</h4>
-            <h6 className='profesionalCards'>Dermartóloga</h6>
-            <h6 className='locatedCards'>Poblado</h6>
-            <p className='starCards'>
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-            </p>
-          </div>
-        </div>
-        {/* tarjeta 9 */}
-        <div className='cardCards'>
-          <div className='photoCards'>
-            <img src='https://i.ibb.co/gT0S0KG/foto-4.png' alt=''></img>
-          </div>
-          <div className='detailsDCards'>
-            <h4 className='nameCards'>Manuela Arango</h4>
-            <h6 className='profesionalCards'>Dermartóloga</h6>
-            <h6 className='locatedCards'>Poblado</h6>
-            <p className='starCards'>
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-            </p>
-          </div>
-        </div>
-        {/* tarjeta 10 */}
-        <div className='cardCards'>
-          <div className='photoCards'>
-            <img src='https://i.ibb.co/gT0S0KG/foto-4.png' alt=''></img>
-          </div>
-          <div className='detailsDCards'>
-            <h4 className='nameCards'>Manuela Arango</h4>
-            <h6 className='profesionalCards'>Dermartóloga</h6>
-            <h6 className='locatedCards'>Poblado</h6>
-            <p className='starCards'>
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-            </p>
-          </div>
-        </div>
-        {/* tarjeta 11 */}
+  state = {
+    doctores: []
+  };
 
-        <div className='cardCards'>
-          <div className='photoCards'>
-            <img src='https://i.ibb.co/gT0S0KG/foto-4.png' alt=''></img>
+  componentDidMount() {
+    fetch("https://randomuser.me/api/?results=11")
+      .then(response => response.json())
+      .then(data => this.setState({ doctores: data.results }))
+      .catch(error => {
+        alert("Hubo un pequeño error", error);
+      });
+  }
+  render() {
+    console.log(this.state);
+    return (
+      <>
+        {this.state.doctores.map((person, index) => (
+          <div className='containerDoc' key={index}>
+            <div className='cardCards'>
+              <div className='photoCards'>
+                <img src={person.picture.large} alt='' />
+              </div>
+              <div className='detailsDCards'>
+                <a href='#' className='nameCards'>
+                  {person.name.first}
+                </a>
+                <h6 className='profesionalCards'>{person.dob.gender}</h6>
+                <h6 className='locatedCards'>{person.location.city}</h6>
+                <p className='starCards'>
+                  <MdStarBorder />
+                  <MdStarBorder />
+                  <MdStarBorder />
+                  <MdStarBorder />
+                  <MdStarBorder />
+                </p>
+              </div>
+            </div>
           </div>
-          <div className='detailsDCards'>
-            <h4 className='nameCards'>Manuela Arango</h4>
-            <h6 className='profesionalCards'>Dermartóloga</h6>
-            <h6 className='locatedCards'>Poblado</h6>
-            <p className='starCards'>
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-              <MdStarBorder />
-            </p>
-          </div>
-        </div>
-        {/* Footer */}
-        <Footer />
-      </div>
+        ))}
+      </>
     );
   }
 }
 
 export default Cards;
-
-// Este le va dar el sentido y pasa a la pag dr
