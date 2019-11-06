@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "./cards.css";
+import "./perfilDoctores.css";
 import { MdStarBorder } from "react-icons/md";
 
-class Cards extends Component {
+class perfilDoctores extends Component {
   state = {
     doctores: []
   };
@@ -16,7 +16,6 @@ class Cards extends Component {
       });
   }
   render() {
-    console.log(this.state);
     return (
       <>
         {this.state.doctores.map((person, index) => (
@@ -47,4 +46,4 @@ class Cards extends Component {
   }
 }
 
-export default Cards;
+export default perfilDoctores;

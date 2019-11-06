@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import { MdChevronRight } from "react-icons/md";
 import "./hour.css";
 
-class Hour extends Component {
-  state = {};
-  render() {
+const Hour = () => {
     return (
       <div className='scheduleHour'>
         <div className='firstHour'>Hora</div>
@@ -14,6 +12,5 @@ class Hour extends Component {
       </div>
     );
   }
-}
 
 export default Hour;

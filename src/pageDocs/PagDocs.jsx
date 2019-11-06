@@ -4,8 +4,7 @@ import "./pagDocs.css";
 import Hour from "./Hour";
 import Day from "./Day";
 
-class PagDocs extends Component {
-  render() {
+const  PagDocs = () => {
     return (
       <div className='containerDoc'>
         <div className='containerappointment'>
@@ -48,6 +47,5 @@ class PagDocs extends Component {
       </div>
     );
   }
-}
 
 export default PagDocs;

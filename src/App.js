@@ -4,16 +4,13 @@ import Footer from "./home/footer";
 import Home from "./home/Home";
 import { Switch, Route } from "react-router-dom";
 import SignUP from "./home/signUP/SignUP";
-import Cards from "./pageDocs/Cards";
-import PageDoc from "./pageDocs/PagDocs";
-import { Link } from "react-router-dom";
+import perfilDoctores from "./pageDocs/perfilDoctores";
+import PagDocs from "./pageDocs/PagDocs";
 
 import "./App.css";
-
 const Error = () => {
   return <div>ERROR</div>;
 };
-
 const App = () => {
   return (
     <div className='App'>
@@ -22,8 +19,8 @@ const App = () => {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/registro' component={SignUP} />
-        <Route exact path='/agendamedica' component={Cards} />
-        <Route path='/doctores/:id' component={PageDoc} />
+        <Route exact path='/perfildoctores' component={perfilDoctores} />
+        <Route path='/doctores' component={PagDocs} />
         <Route component={Error} />
       </Switch>
       <Footer />
