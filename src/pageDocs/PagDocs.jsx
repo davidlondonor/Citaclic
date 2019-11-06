@@ -5,7 +5,6 @@ import Hour from "./Hour";
 import Day from "./Day";
 
 class PagDocs extends Component {
-  //   state = {};
   render() {
     return (
       <div className='containerDoc'>
@@ -44,7 +43,6 @@ class PagDocs extends Component {
             <Hour />
             <Hour />
             <Hour />
-            {/* <Hour /> */}
           </div>
         </div>
       </div>

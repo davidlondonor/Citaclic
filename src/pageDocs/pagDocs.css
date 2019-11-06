@@ -1,18 +1,13 @@
 .containerDoc {
-  /* background-color: brown; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 20px;
 }
 .appointment {
-  /* height: 821px; */
-  /* background-color: tan; */
-  /* width: 60vw; */
   padding: 10px;
   margin-left: 10px;
-  /* display: flex;
-  flex-direction: column; */
+  flex-direction: column;
   width: 821px;
   height: 680px;
 }
@@ -21,7 +16,6 @@
 }
 .cardCardsDoc {
   background-color: white;
-  /* align-content: flex-start; */
   width: 290px;
   height: 275px;
   border-radius: 5px;

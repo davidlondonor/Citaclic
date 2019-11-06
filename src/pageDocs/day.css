@@ -2,7 +2,6 @@
   display: flex;
   top: 240px;
   left: 425px;
-  /* width: 681px; */
   height: 59px;
   justify-content: space-around;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -12,12 +11,10 @@
 }
 .dayxDayDetails {
   justify-content: center;
-  /* text-align: left; */
   font: Medium 16px/20px Inter;
   color: #888888;
   opacity: 1;
   height: 0.3rem;
-  /* background: blue; */
   border: none;
   transition: 0.3s ease-in-out;
   text-decoration: none;
@@ -34,7 +31,6 @@
   transition: 0.3s ease-in-out;
 }
 .dayxDayDetail:focus {
-  /* border-bottom: 5px red solid; */
   outline: solid;
   border-bottom: 3px solid red;
 }

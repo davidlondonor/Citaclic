@@ -22,8 +22,8 @@ const App = () => {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/registro' component={SignUP} />
-        <Route exact path='/doctores' component={PageDoc} />
-        <Route exact path='/Cards' component={Cards} />
+        <Route exact path='/agendamedica' component={Cards} />
+        <Route path='/doctores/:id' component={PageDoc} />
         <Route component={Error} />
       </Switch>
       <Footer />
