@@ -9,7 +9,10 @@ class SignUP extends React.Component{
         lastName: "",
         isLastNameEmpty: false,
         email: "",
-        isEmailValue: false,
+        isEmailValid: false,
+        password: "",
+        confirmPassword: "",
+        isPasswordValid: false
     };
 
     handleSubmit = (event) => {
@@ -36,18 +39,33 @@ class SignUP extends React.Component{
 
         const validateEmail = (email) => {
             return /\S+@\S+\.\S+/.test(email)
-        }; 
-
+        };
         this.setState({
             isDirty: true,
-            isEmailValue: validateEmail(emailValue),
+            isEmailValid: validateEmail(emailValue),
             email: emailValue
         })
     }
+    handlePassword = (event) => {
+        const passwordValue = event.target.value;
+        this.setState({
+            isDirty: true, 
+            password: passwordValue, 
+            isPasswordValid: passwordValue === this.state.confirmPassword
+        })
+    }  
+    handlePasswordConfirm = (event) => {
+        const passwordConfirmValue = event.target.value;
+        this.setState({
+            isDirty: true,
+            confirmPassword: passwordConfirmValue,
+            isPasswordValid: passwordConfirmValue === this.state.password
+        })
+    }  
     render(){
         return(
-        <div className="container container-signup">
-            <img className="img-signup" src="https://place-hold.it/751x660"></img>
+        <div className="container container-signup">             
+            <img className="img-signup" src="https://i.ibb.co/C8zZyZ8/doctor-vestido-con-una-bata-blanca-y-una-corbata-azul-sosteniendo-una-carpeta-0.jpg"></img>
                <div className="right-container"> 
                 <div className="SignUP">
                     <form onSubmit={this.handleSubmit} className="form" autoComplete="off">
@@ -86,19 +104,41 @@ class SignUP extends React.Component{
                                 id="email"
                                 value={this.state.email}
                                 onChange={this.handleEmailChange}
-                                style={this.state.isDirty && !this.state.isEmailValue ? { border: '1px solid red' } : {}}
+                                style={this.state.isDirty && this.state.email !== '' && !this.state.isEmailValid ? { border: '1px solid red' } : {}}
                             />
-                                {this.state.isDirty && !this.state.isEmailValue ?
+                                {this.state.isDirty && this.state.email !== '' && !this.state.isEmailValid ?
                             (<p className="campoVacio">Debe ingresar un correo electrónico válido</p>): null}
                         </div>
                         <div className="password">
-                            <label className="text-label">Contraseña</label>
-                            <input className="stylesInput contraseña-margin" type="password"></input>
-
-                            <label className="text-label">Confirmar contraseña</label>
-                            <input className="stylesInput" type="password"></input>
+                            <label htmlFor="password" className="text-label">Contraseña</label>
+                            <input
+                                className="stylesInput contraseña-margin" 
+                                type="password"
+                                id="password"
+                                value={this.state.password}
+                                onChange={this.handlePassword}
+                            />  
+                            <label htmlFor="passwordConfirm" className="text-label">Confirmar contraseña</label>
+                            <input 
+                                className="stylesInput contraseña-margin" 
+                                type="password"
+                                id="passwordConfirm"
+                                value={this.state.confirmPassword}
+                                onChange={this.handlePasswordConfirm}
+                                style={this.state.isDirty && this.state.isPasswordValid ? { border: '1px solid red' } : {}}
+                            />
+                            {this.state.isDirty && !this.state.isPasswordValid ?
+                                (<p className="campoVacio">La contraseña no coincide</p>): null}
                         </div>
-                            <button disabled={this.state.isNameEmpty || this.state.isLastNameEmpty} className="boton-signUp" type="submit">Registrarme</button>
+                        <button 
+                            disabled={
+                                this.state.isNameEmpty ||
+                                this.state.isLastNameEmpty ||
+                                !this.state.isEmailValid ||
+                                !this.state.isPasswordValid
+                            } 
+                            className="boton-signUp" type="submit">Registrarme
+                        </button>
                     </form>
                 </div>
              </div>  

@@ -12,11 +12,12 @@
     width: 400px;
   }
   .citaclic{
-    background-color: #EBEBEB;
+    background-image: url('https://i.ibb.co/BcMqyqs/istockphoto-638377134-612x612.jpg');
+    background-repeat: no-repeat;
+    background-size: 1400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 450px;
   }
   .text-citaclic{
     padding: 15px 118px 300px 100px;

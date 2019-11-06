@@ -51,8 +51,8 @@ div .container-signup {
 }
 .img-signup{
   flex-basis: 55%;
-  height: 660px;
-  width: 751px;
+  height: 600px;
+  width: 700px;
 }
 .right-container{
   display: flex;
