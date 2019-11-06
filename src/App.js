@@ -4,8 +4,8 @@ import Footer from "./home/footer";
 import Home from "./home/Home";
 import { Switch, Route } from "react-router-dom";
 import SignUP from "./home/signUP/SignUP";
-import perfilDoctores from "./pageDocs/perfilDoctores";
-import PagDocs from "./pageDocs/PagDocs";
+import perfilDoctores from "./perfilDoctores/perfilDoctores";
+import tarjetaDocs from "./tarjetaDoctor/tarjetaDocs";
 
 import "./App.css";
 const Error = () => {
@@ -20,7 +20,7 @@ const App = () => {
         <Route exact path='/' component={Home} />
         <Route exact path='/registro' component={SignUP} />
         <Route exact path='/perfildoctores' component={perfilDoctores} />
-        <Route path='/doctores' component={PagDocs} />
+        <Route path='/doctores' component={tarjetaDocs} />
         <Route component={Error} />
       </Switch>
       <Footer />
