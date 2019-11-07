@@ -8,7 +8,7 @@ class perfilDoctores extends Component {
   };
 
   componentDidMount() {
-    fetch("https://randomuser.me/api/?results=11")
+    fetch("https://randomuser.me/api/?results=12")
       .then(response => response.json())
       .then(data => this.setState({ doctores: data.results }))
       .catch(error => {
@@ -17,12 +17,23 @@ class perfilDoctores extends Component {
   }
   render() {
     return (
-      <>
+      <div className="contenedor-general">
+        <div className="categorias">
+              <a className="estilos-a">Dermatología</a>
+              <a className="estilos-a">Oftalmología</a>
+              <a className="estilos-a">Odontología</a>
+              <a className="estilos-a">Fisioterapia</a>
+              <a className="estilos-a">Medicina general</a>
+              <a className="estilos-a">Nutrición</a>
+              <a className="estilos-a">Cardiología</a>
+              <a className="estilos-a">Ginecología</a>
+        </div>
+
         {this.state.doctores.map((person, index) => (
           <div className='containerDoc' key={index}>
             <div className='cardCards'>
               <div className='photoCards'>
-                <img src={person.picture.large} alt='' />
+                <img className="estilos-img" src={person.picture.large} alt='' />
               </div>
               <div className='detailsDCards'>
                 <a href='#' className='nameCards'>
@@ -41,7 +52,7 @@ class perfilDoctores extends Component {
             </div>
           </div>
         ))}
-      </>
+      </div>
     );
   }
 }
