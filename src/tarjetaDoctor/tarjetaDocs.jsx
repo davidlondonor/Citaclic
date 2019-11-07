@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { MdStarBorder } from "react-icons/md";
 import "./tarjetaDocs.css";
 import Hour from "./Hour";
 import Day from "./Day";
 
-const tarjetaDocs = () => {
+const TarjetaDocs = () => {
   return (
     <div className='containerDoc'>
       <div className='containerappointment'>
@@ -48,4 +48,4 @@ const tarjetaDocs = () => {
   );
 };
 
-export default tarjetaDocs;
+export default TarjetaDocs;

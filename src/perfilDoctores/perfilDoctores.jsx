@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import "./perfilDoctores.css";
 import { MdStarBorder } from "react-icons/md";
+import {Link} from 'react-router-dom';
 
-class perfilDoctores extends Component {
+
+class PerfilDoctores extends Component {
   state = {
     doctores: []
   };
@@ -19,14 +21,14 @@ class perfilDoctores extends Component {
     return (
       <div className="contenedor-general">
         <div className="categorias">
-              <a className="estilos-a">Dermatología</a>
-              <a className="estilos-a">Oftalmología</a>
-              <a className="estilos-a">Odontología</a>
-              <a className="estilos-a">Fisioterapia</a>
-              <a className="estilos-a">Medicina general</a>
-              <a className="estilos-a">Nutrición</a>
-              <a className="estilos-a">Cardiología</a>
-              <a className="estilos-a">Ginecología</a>
+              <a href="#" className="estilos-a">Dermatología</a>
+              <a href="#" className="estilos-a">Oftalmología</a>
+              <a href="#" className="estilos-a">Odontología</a>
+              <a href="#" className="estilos-a">Fisioterapia</a>
+              <a href="#" className="estilos-a">Medicina general</a>
+              <a href="#" className="estilos-a">Nutrición</a>
+              <a href="#" className="estilos-a">Cardiología</a>
+              <a href="#" className="estilos-a">Ginecología</a>
         </div>
 
         {this.state.doctores.map((person, index) => (
@@ -36,9 +38,9 @@ class perfilDoctores extends Component {
                 <img className="estilos-img" src={person.picture.large} alt='' />
               </div>
               <div className='detailsDCards'>
-                <a href='#' className='nameCards'>
+                <Link to='/doctores/:id' href='#' className='nameCards'>
                   {person.name.first}
-                </a>
+                </Link>
                 <h6 className='profesionalCards'>{person.dob.gender}</h6>
                 <h6 className='locatedCards'>{person.location.city}</h6>
                 <p className='starCards'>
@@ -57,4 +59,4 @@ class perfilDoctores extends Component {
   }
 }
 
-export default perfilDoctores;
+export default PerfilDoctores;

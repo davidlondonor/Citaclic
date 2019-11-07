@@ -101,7 +101,7 @@ class Login extends React.Component{
                             (<p className="campoVacio">El campo no puede estar vacío</p> ): null}
                     </div>
                     <div className="password">
-                        <label htmlFor="password" className="text-label" htmlFor="number">Contraseña</label>
+                        <label htmlFor="password" className="text-label">Contraseña</label>
                         <input
                             className="styles-input" 
                             type="password"
