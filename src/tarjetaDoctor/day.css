@@ -1,0 +1,36 @@
+.dayxDay {
+  display: flex;
+  top: 240px;
+  left: 425px;
+  height: 59px;
+  justify-content: space-around;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  border-radius: 5px;
+}
+.dayxDayDetails {
+  justify-content: center;
+  font: Medium 16px/20px Inter;
+  color: #888888;
+  opacity: 1;
+  height: 0.3rem;
+  border: none;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+.dayxDayDetails:hover {
+  background: transparent linear-gradient(180deg, #149bf3 0%, #4f58fd 100%) 0%
+    0% no-repeat padding-box;
+}
+.dayxDayDetail {
+  justify-content: center;
+  text-align: center;
+  color: #888888;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.dayxDayDetail:focus {
+  outline: solid;
+  border-bottom: 3px solid red;
+}
