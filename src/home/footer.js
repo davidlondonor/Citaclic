@@ -8,7 +8,6 @@ const Footer = () => {
                 <div className="links">
                     <a className="text-footer">Términos y condiciones</a>
                     <a className="text-footer">Políticas de privacidad</a>
-                    <a className="text-footer">Sobre nosotros</a>
                     <a className="text-footer">Contáctanos</a>
                 </div>
                 <div className="copyright">
