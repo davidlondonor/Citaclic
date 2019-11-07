@@ -1,13 +1,16 @@
 import React from 'react';
 import './menu.css';
 import Modal from 'react-modal';
+import {Link} from 'react-router-dom';
+
+import exitImage from '../assets/exit.png';
 
 const stylesModal = {
     content: {
         width: '280px',
         height: '120px',
-        top: '30%',
-        left: '80%',
+        top: '15%',
+        left: '85%',
         right: '20%',
         bottom: '100%',
         marginRight: '-50%',
@@ -33,16 +36,28 @@ closeModal = () => {
     this.setState({
         isModalOpen: false 
     })
-}  
+} 
+volverInicio = () => {
+    this.closeModal()
+    this.props.history.push('/');
+} 
+
     render(){
         return(
             <>
                 <div className="container">
                     <div className="menu">
-                        <a className="display-logo" href="#"> <img className="img-logo" src="https://i.ibb.co/FnNBTJ8/logocitaclic.png" alt="logo" /></a>
-                        <a href="#citaclic" className="nav">¿Por qué citaclic?</a>
-                        <a href="#nosotros" className="nav">Nosotros</a>
-                        <a href="#ayuda" className="nav">Ayuda</a>
+                        <Link className="display-logo" to='/'><img className="img-logo" src="https://i.ibb.co/FnNBTJ8/logocitaclic.png" alt="logo" /> </Link>
+                            <div>
+                                {!this.props.isLoggedIn ?
+                                (<a href="#citaclic" className="nav">¿Por qué citaclic?</a>): null}
+                                {!this.props.isLoggedIn ? 
+                                    (<a href="#nosotros" className="nav">Nosotros</a>) : null}
+                                {!this.props.isLoggedIn ?
+                                (<a href="ayuda" className="nav">Ayuda</a>): null}    
+                                {this.props.isLoggedIn ? 
+                                (<a onClick={this.openModal}> <img src={exitImage} alt="Cerrar sesión" className="img-salir"></img></a> ): null}
+                            </div>
                     </div>
                 </div>
                 <Modal
@@ -55,12 +70,13 @@ closeModal = () => {
                             <div>
                                 <p className="text-modal-salir">¿Quieres cerrar sesión?</p>
                                 <button 
-                                    type="submit" 
+                                    type="button" 
                                     onClick={this.closeModal} 
                                     className="boton-volver-salir">volver
                                 </button>
                                 <button 
-                                    type="submit" 
+                                    type="button" 
+                                    onClick={this.volverInicio}
                                     className="boton-confirmar-salir" 
                                     >confirmar
                                 </button>               

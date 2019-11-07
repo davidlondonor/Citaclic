@@ -65,7 +65,7 @@ class SignUP extends React.Component{
     render(){
         return(
         <div className="container container-signup">             
-            <img className="img-signup" src="https://i.ibb.co/C8zZyZ8/doctor-vestido-con-una-bata-blanca-y-una-corbata-azul-sosteniendo-una-carpeta-0.jpg"></img>
+            <img alt="Registrarse" className="img-signup" src="https://i.ibb.co/C8zZyZ8/doctor-vestido-con-una-bata-blanca-y-una-corbata-azul-sosteniendo-una-carpeta-0.jpg"></img>
                <div className="right-container"> 
                 <div className="SignUP">
                     <form onSubmit={this.handleSubmit} className="form" autoComplete="off">
