@@ -3,7 +3,7 @@ import Menu from "./home/menu";
 import Footer from "./home/footer";
 import Home from "./home/Home";
 import { Switch, Route } from "react-router-dom";
-import SignUP from "./home/signUP/SignUP";
+import SignUP from "./signUP/SignUP";
 import perfilDoctores from "./perfilDoctores/perfilDoctores";
 import tarjetaDocs from "./tarjetaDoctor/tarjetaDocs";
 
