@@ -40,8 +40,7 @@ closeModal = () => {
                 <div className="container">
                     <div className="menu">
                         <a className="display-logo" href="#"> <img className="img-logo" src="https://i.ibb.co/FnNBTJ8/logocitaclic.png" alt="logo" /></a>
-{/*                         <a onClick={this.openModal} href='#'>ProbandoModal</a>
- */}                        <a href="#citaclic" className="nav">¿Por qué citaclic?</a>
+                        <a href="#citaclic" className="nav">¿Por qué citaclic?</a>
                         <a href="#nosotros" className="nav">Nosotros</a>
                         <a href="#ayuda" className="nav">Ayuda</a>
                     </div>

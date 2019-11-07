@@ -78,7 +78,7 @@ class Login extends React.Component{
         alert('El enlace ha sido enviado');
     }
     handleSubmit = () => {
-        this.props.history.push('/doctores');
+        this.props.history.push('/perfilDoctores');
     }
 
     render(){
@@ -117,7 +117,10 @@ class Login extends React.Component{
 
                     </div>
                     <div className="start-boton">
-                        <button className="boton" type="submit">Iniciar sesión</button>
+                        <button 
+                            className="boton" 
+                            type="submit"> Iniciar sesión
+                        </button>
                     </div>
                     <div className="login-text">
                         <Link to='/registro'>Regístrate</Link>
