@@ -38,7 +38,7 @@ class PerfilDoctores extends Component {
                 <img className="estilos-img" src={person.picture.large} alt='' />
               </div>
               <div className='detailsDCards'>
-                <Link to='/doctores/:id' href='#' className='nameCards'>
+                <Link to={`/doctores/${person.login.uuid}`} href='#' className='nameCards'>
                   {person.name.first}
                 </Link>
                 <h6 className='profesionalCards'>{person.dob.gender}</h6>
