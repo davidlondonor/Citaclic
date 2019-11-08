@@ -22,7 +22,7 @@ div .container-signup {
   border: 1px solid #EBEBEB;
   border-radius: 3px;
 }
-.password, .name, .lastName, .email{
+.password, .name, .lastName, .email, .mobile, .document-type, .number-document{
   flex-direction: column;
   display: flex;
   padding-top: 20px;
