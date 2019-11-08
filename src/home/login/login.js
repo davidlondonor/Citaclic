@@ -118,6 +118,7 @@ class Login extends React.Component{
                     </div>
                     <div className="start-boton">
                         <button 
+                            disabled={!this.state.isPasswordValid && !this.state.isUserNameEmpty}
                             className="boton" 
                             type="submit"> Iniciar sesión
                         </button>
