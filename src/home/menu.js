@@ -54,7 +54,7 @@ volverInicio = () => {
                                 {!this.props.isLoggedIn ? 
                                     (<a href="#nosotros" className="nav">Nosotros</a>) : null}
                                 {!this.props.isLoggedIn ?
-                                (<a href="ayuda" className="nav">Ayuda</a>): null}    
+                                (<a href="#ayuda" className="nav">Ayuda</a>): null}    
                                 {this.props.isLoggedIn ? 
                                 (<a onClick={this.openModal}> <img src={exitImage} alt="Cerrar sesión" className="img-salir"></img></a> ): null}
                             </div>
