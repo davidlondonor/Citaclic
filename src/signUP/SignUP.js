@@ -1,5 +1,6 @@
 import React from 'react';
 import './SignUP.css';
+import doctorRegistro from '../assets/doctorRegistro.png';
 
 class SignUP extends React.Component{
     state={
@@ -12,7 +13,13 @@ class SignUP extends React.Component{
         isEmailValid: false,
         password: "",
         confirmPassword: "",
-        isPasswordValid: false
+        isPasswordValid: false,
+        mobile: "",
+        isMobileValid: false,
+        document: "",
+        isDocumentValid: false,
+        numberDocument: "",
+        isNumberDocumentValid: false
     };
 
     handleSubmit = (event) => {
@@ -26,6 +33,30 @@ class SignUP extends React.Component{
             name: nameValue
         })
     }
+    handleMobileChange = (event) =>{
+        const mobileValue= event.target.value;
+        this.setState({
+            isDirty: true,
+            isMobileValid: mobileValue === "",
+            mobile: mobileValue
+        })
+    }
+    handleDocumentChange = (event) =>{
+        const documentValue= event.target.value;
+        this.setState({
+            isDirty: true,
+            isDocumentValid: documentValue === "",
+            document: documentValue
+        })
+    }
+    handleNumberDocument = (event) => {
+        const numberDocumentValue= event.target.value;
+        this.setState({
+            isDirty: true,
+            isNumberDocumentValid: numberDocumentValue === "",
+            numberDocument: numberDocumentValue
+        })
+    } 
     handleLastNameChange = (event) => {
         const lastNameValue = event.target.value;
         this.setState({
@@ -65,7 +96,7 @@ class SignUP extends React.Component{
     render(){
         return(
         <div className="container container-signup">             
-            <img alt="Registrarse" className="img-signup" src="https://i.ibb.co/C8zZyZ8/doctor-vestido-con-una-bata-blanca-y-una-corbata-azul-sosteniendo-una-carpeta-0.jpg"></img>
+            <img alt="Registrarse" className="img-signup" src={doctorRegistro}></img>
                <div className="right-container"> 
                 <div className="SignUP">
                     <form onSubmit={this.handleSubmit} className="form" autoComplete="off">
@@ -96,6 +127,38 @@ class SignUP extends React.Component{
                             {this.state.isDirty && this.state.isLastNameEmpty ?
                             (<p className="campoVacio">El campo no puede estar vacío</p>): null}
                         </div>
+                        <div className="document-type">
+                            <label htmlFor="tipo-documento" className="text-label">Tipo de identificación</label>
+                            <input 
+                                className="stylesInput" 
+                                type="text"
+                                id="tipo-documento"
+                                value={this.state.document}
+                                onChange={this.handleDocumentChange}
+                                style={this.state.isDirty && this.state.isDocumentValid ? { border: '1px solid red' } : {}}
+                            />
+                            {this.state.isDirty && this.state.isDocumentValid ?
+                            (<p className="campoVacio">El campo no puede estar vacío</p>): null}
+                        </div>
+
+
+                        <div className="number-document">
+                            <label htmlFor="numero-documento" className="text-label">Número de identificación</label>
+                            <input 
+                                className="stylesInput" 
+                                type="text"
+                                id="numero-documento"
+                                value={this.state.numberDocument}
+                                onChange={this.handleNumberDocument}
+                                style={this.state.isDirty && this.state.isNumberDocumentValid ? { border: '1px solid red' } : {}}
+                            />
+                            {this.state.isDirty && this.state.isNumberDocumentValid ?
+                            (<p className="campoVacio">El campo no puede estar vacío</p>): null}
+                        </div>
+
+
+
+
                         <div className="email">
                             <label htmlFor="email" className="text-label">Correo electrónico</label>
                             <input 
@@ -108,6 +171,19 @@ class SignUP extends React.Component{
                             />
                                 {this.state.isDirty && this.state.email !== '' && !this.state.isEmailValid ?
                             (<p className="campoVacio">Debe ingresar un correo electrónico válido</p>): null}
+                        </div>
+                        <div className="mobile">
+                            <label htmlFor="mobile" className="text-label">Celular</label>
+                            <input
+                                className="stylesInput" 
+                                type="text"
+                                id="mobile"
+                                value={this.state.mobile}
+                                onChange={this.handleMobileChange}
+                                style={this.state.isDirty && this.state.isMobileValid ? { border: '1px solid red' } : {}}
+                             />
+                            {this.state.isDirty && this.state.isMobileValid ? 
+                            (<p className="campoVacio">El campo no puede estar vacío</p> ): null}
                         </div>
                         <div className="password">
                             <label htmlFor="password" className="text-label">Contraseña</label>

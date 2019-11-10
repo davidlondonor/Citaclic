@@ -2,7 +2,7 @@ import React from 'react';
 import './menu.css';
 import Modal from 'react-modal';
 import {Link} from 'react-router-dom';
-
+import logocitaclic from '../assets/logocitaclic.png';
 import exitImage from '../assets/exit.png';
 
 const stylesModal = {
@@ -47,7 +47,7 @@ volverInicio = () => {
             <>
                 <div className="container">
                     <div className="menu">
-                        <Link className="display-logo" to='/'><img className="img-logo" src="https://i.ibb.co/FnNBTJ8/logocitaclic.png" alt="logo" /> </Link>
+                        <Link className="display-logo" to='/'><img className="img-logo" src={logocitaclic} alt="logo" /> </Link>
                             <div>
                                 {!this.props.isLoggedIn ?
                                 (<a href="#citaclic" className="nav">¿Por qué citaclic?</a>): null}
