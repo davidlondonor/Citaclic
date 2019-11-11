@@ -35,7 +35,15 @@
   text-align: center;
 }
 .butttonHour {
+  background: #3576f8;
+  height: 30px;
+  border-radius: 5px;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
   display: flex;
   justify-content: flex-end;
-  outline: 1px deeppink dashed;
+  text-align: center;
 }
