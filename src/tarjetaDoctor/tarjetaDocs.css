@@ -24,7 +24,7 @@
   padding: 5px;
 }
 .photoCardsDoc {
-  background-color: yellow;
+  background-color: white;
   width: 290px;
   height: 220px;
   margin: 0;
@@ -57,16 +57,13 @@
 }
 .priceDoc {
   height: 40px;
-  background-color: #888888;
+  background-color: white;
   flex-grow: 1;
 }
 .avalibleDoc {
   height: 40px;
-  background-color: #96d50f;
-  flex-grow: 1;
 }
 .hourDoc {
-  height: 40px;
   background-color: #0f93d5;
   flex-grow: 1;
 }

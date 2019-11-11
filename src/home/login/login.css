@@ -1,124 +1,127 @@
-.login {
-  top: 30%;
-  right: 80px;
-  padding: 20px 20px;
-  height: 320px;
-  width: 270px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0px 3px 6px #00000029;
-  border: 1px solid #ebebeb;
-  position: absolute;
+.login{
+    top: 30%;
+    right: 80px;
+    padding: 20px 20px;
+    width: 270px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #EBEBEB;
+    position: absolute;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
+  .styles-input{
+    height: 30px;
+    width: 258px;
+    background: #FAFAFA;
+    border: 1px solid #EBEBEB;
+    border-radius: 3px;
+  }
+  .password, .username{
+    flex-direction: column;
+    display: flex;
+    padding-top: 20px;
+  }
+  .start-boton{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .boton{
+    background: #3576F8;
+    height: 36px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    width: 258px;
+    border: 0;
+    cursor: pointer;
+  }
+  .registry-text{
+    color: #888888;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .login-text{
+    display: flex;
+    justify-content: center;
+  }
+  .login-text a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #2C7FF7;
+  }
+  .text-label{
+    padding-bottom: 10px;
+    color: #888888;
+  }
+  .password-text{
+    padding-top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #2C7FF7;
+  }
+  .container-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
-.form {
-  display: flex;
-  flex-direction: column;
+.text-modal{
+    width: 240px;
+    height: 45px;
+    text-align: left;
+    font-size: 12px;
+    color: #888888;
+    margin-bottom: 15px;
 }
-.styles-input {
-  height: 30px;
-  width: 258px;
-  background: #fafafa;
-  border: 1px solid #ebebeb;
-  border-radius: 3px;
+.text-modal-email{
+    text-align: left;
+    font-size: 12px;
+    color: #888888;
+    margin-bottom: 5px;   
 }
-.password,
-.username {
-  flex-direction: column;
-  display: flex;
-  padding-top: 20px;
+.input-modal{
+    width: 230px;
+    height: 30px;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
-.start-boton {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 10px;
+.boton-volver{
+    width: 90px;
+    height: 30px;
+    background: #E0E1E2;   
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 45px;
+    margin-top: 10px;
+    border: none;
 }
-.boton {
-  background: #3576f8;
-  height: 36px;
-  border-radius: 5px;
-  color: #ffffff;
-  width: 258px;
-  border: 0;
-  cursor: pointer;
+.boton-confirmar{
+    background: #3576F8;
+    height: 30px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    width: 90px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+
 }
-.registry-text {
-  color: #888888;
-  text-align: center;
-  padding-top: 20px;
-}
-.login-text {
-  display: flex;
-  justify-content: center;
-}
-.login-text a {
-  cursor: pointer;
-  text-decoration: none;
-  color: #2c7ff7;
-}
-.text-label {
-  padding-bottom: 10px;
-  color: #888888;
-}
-.password-text {
-  padding-top: 10px;
-  font-size: 15px;
-  cursor: pointer;
-  text-decoration: none;
-  color: #2c7ff7;
-}
-.container-modal {
-  width: 100%;
-  height: 100%;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
-  border: 1px solid #ebebeb;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-.text-modal {
-  width: 240px;
-  height: 45px;
-  text-align: left;
+.campoVacio{
   font-size: 12px;
-  color: #888888;
-  margin-bottom: 15px;
-}
-.text-modal-email {
-  text-align: left;
-  font-size: 12px;
-  color: #888888;
-  margin-bottom: 5px;
-}
-.input-modal {
-  width: 230px;
-  height: 30px;
-  background: #fafafa 0% 0% no-repeat padding-box;
-  border: 1px solid #ebebeb;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-.boton-volver {
-  width: 90px;
-  height: 30px;
-  background: #e0e1e2;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 45px;
-  margin-top: 10px;
-  border: none;
-}
-.boton-confirmar {
-  background: #3576f8;
-  height: 30px;
-  border-radius: 5px;
-  color: #ffffff;
-  width: 90px;
-  border: 0;
-  cursor: pointer;
-  margin-top: 10px;
-  border: none;
-}
-.inside-modal {
-  margin-left: 25px;
+  color: red;
 }

@@ -1,0 +1,68 @@
+div .container-signup {
+  flex-direction: row;
+}
+
+.SignUP{
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+  width: 298px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #EBEBEB;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+}
+.stylesInput{
+  height: 30px;
+  width: 258px;
+  border: 1px solid #EBEBEB;
+  border-radius: 3px;
+}
+.password, .name, .lastName, .email, .mobile, .document-type, .number-document{
+  flex-direction: column;
+  display: flex;
+  padding-top: 20px;
+}
+.boton-signUp{
+  margin-top: 20px;
+  font-size: 16px;
+  background: #3576F8;
+  height: 35px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  width: 258px;
+  border: 0;
+  cursor: pointer;
+}
+.boton-signUp:disabled{
+  background: rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.12);
+  cursor: default;
+  pointer-events: none;
+}
+.text-label{
+  padding-bottom: 10px;
+  color: #888888;
+  opacity: 1;
+}
+.img-signup{
+  flex-basis: 55%;
+  height: 600px;
+  width: 700px;
+}
+.right-container{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.campoVacio{
+  font-size: 12px;
+  color: red;
+}
+.contraseña-margin{
+  margin-bottom: 20px;
+}

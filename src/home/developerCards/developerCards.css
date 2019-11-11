@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   background-color: #F7F7FA;
-  height: 350px;
+  height: 450px;
   align-items: center;
 }
 .card{
@@ -23,4 +23,5 @@
   font-size: 14px;
   margin: 0;
   margin-left: 5px;
+  text-decoration: none;
 }

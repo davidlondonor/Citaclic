@@ -9,18 +9,7 @@ const Help = () => {
                     <h4 className="textTitle">Asistencia Citaclic</h4>
                 </div>
                 <div className="information texth4">
-                    <h4 className="textTitle">información general</h4>
-                    <ul>
-                        <li className="text-help">
-                            <a>¿Quiénes somos?</a>
-                        </li>
-                        <li className="text-help">
-                            <a>Novedades</a>
-                        </li>
-                        <li className="text-help">
-                            <a>Experiencia Citaclic</a>
-                        </li>
-                    </ul>                    
+                    <h4 className="textTitle">información general</h4>                   
                 </div>
             </div>
         </div>
