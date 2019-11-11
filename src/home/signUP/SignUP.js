@@ -18,7 +18,7 @@ const SignUP = () => {
                         </div>
                         <div className="email">
                             <label className="text-label">Correo electrónico</label>
-                            <input className="stylesInput" type="email"></input>
+                            <input className="stylesInput" type="text"></input>
                         </div>
                         <div className="password">
                             <label className="text-label">Contraseña</label>

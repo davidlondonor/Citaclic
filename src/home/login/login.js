@@ -75,7 +75,7 @@ class Login extends React.Component{
                         <p className="text-modal">Ingresa el correo electrónico asociado a tu cuenta. Te enviaremos un enlace para actualizar tu contraseña.</p>
                         <p className="text-modal-email">Correo electrónico:</p>
                         <form>
-                            <input autoFocus className="input-modal" type="email"></input>
+                            <input autoFocus className="input-modal" type="text"></input>
                         </form>    
                         <button type="submit" onClick={this.closeModal} className="boton-volver">cerrar</button>
                         <button type="submit" className="boton-confirmar" onClick={this.informationSend}>confirmar</button>               
