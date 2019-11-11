@@ -1,27 +1,33 @@
 .App-header {
-    background-color: #2B3137;
-    height: 337px;
-    display: flex;
-    color: #FFFFFF;
-  }
-  .text-header{
-    padding: 200px 118px 20px 100px;
-    color: #FFFFFF;
-    opacity: 0.92;
-    font-size: 35px;
-    width: 400px;
-  }
-  .citaclic{
-    background-color: #EBEBEB;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 450px;
-  }
-  .text-citaclic{
-    padding: 15px 118px 300px 100px;
-    color: #2B3137;
-    opacity: 0.92;
-    font-size: 20px;
-    width: 400px;
-  }
+  background-color: #2b3137;
+  height: 337px;
+  display: flex;
+  color: #ffffff;
+}
+.text-header {
+  padding: 200px 118px 20px 100px;
+  color: #ffffff;
+  opacity: 0.92;
+  font-size: 35px;
+  width: 400px;
+}
+.citaclic {
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  height: 450px;
+}
+.text-citaclic {
+  padding-top: 40px;
+  padding: 15px 118px 300px 100px;
+  color: #2b3137;
+  opacity: 0.92;
+  font-size: 35px;
+  width: 700px;
+}
+.imagenHome {
+  width: 100%;
+}
