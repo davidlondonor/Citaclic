@@ -1,19 +1,12 @@
-.contenedor-general{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .containerDoc {
-  flex-direction: row;
-  display: flex;
+  background-color: khaki;
   flex-wrap: wrap;
   align-content: center;
 }
 .containerCards {
   background: tomato;
-  display: flex;
-  flex-direction: row;
+  display: flexbox;
+  flex-direction: row-reverse;
   width: 900px;
 }
 .cardCards {
@@ -28,6 +21,9 @@
   margin: 2px;
 }
 .photoCards {
+  color: yellow;
+  width: 220px;
+  height: 167px;
   margin: 0;
 }
 .nameCards {
@@ -35,12 +31,6 @@
   font-size: 1.5rem;
   padding: 2px;
   color: #111111;
-  text-decoration: none;
-
-}
-.estilos-img{
-  border-radius: 6px;
-  width: 180px;
 }
 .profesionalCards {
   font: 0.7em sans-serif;
@@ -62,26 +52,4 @@
 .starCards {
   margin: 0;
   color: #149bf3;
-}
-.categorias{
-  display: flex;
-  width: 100%;
-  margin-bottom: 20px;
-  box-shadow: 0px 3px 6px #00000029;
-  border: 1px solid #E0E1E2;
-  opacity: 1;
-  padding: 16px 0;
-  justify-content: space-evenly;
-}
-.estilos-a{
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 1px solid #A1AAB84E;
-  border-radius: 5px;
-  padding: 8px 16px;
-  text-decoration: none;
-  color: #000;
 }

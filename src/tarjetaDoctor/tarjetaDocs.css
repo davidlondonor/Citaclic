@@ -62,11 +62,8 @@
 }
 .avalibleDoc {
   height: 40px;
-  background-color: white;
-  flex-grow: 1;
 }
 .hourDoc {
-  height: 40px;
   background-color: #0f93d5;
   flex-grow: 1;
 }
