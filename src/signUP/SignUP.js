@@ -1,6 +1,7 @@
 import React from 'react';
 import './SignUP.css';
 import doctorRegistro from '../assets/doctorRegistro.png';
+import {Link} from 'react-router-dom';
 
 class SignUP extends React.Component{
     state={
@@ -201,20 +202,22 @@ class SignUP extends React.Component{
                                 id="passwordConfirm"
                                 value={this.state.confirmPassword}
                                 onChange={this.handlePasswordConfirm}
-                                style={this.state.isDirty && this.state.isPasswordValid ? { border: '1px solid red' } : {}}
+                                style={this.state.isDirty && !this.state.isPasswordValid ? { border: '1px solid red' } : {}}
                             />
                             {this.state.isDirty && !this.state.isPasswordValid ?
                                 (<p className="campoVacio">La contraseña no coincide</p>): null}
                         </div>
-                        <button 
-                            disabled={
-                                this.state.isNameEmpty ||
-                                this.state.isLastNameEmpty ||
-                                !this.state.isEmailValid ||
-                                !this.state.isPasswordValid
-                            } 
-                            className="boton-signUp" type="submit">Registrarme
-                        </button>
+                       <Link to="/perfilDoctores">
+                            <button
+                                disabled={
+                                    this.state.isNameEmpty ||
+                                    this.state.isLastNameEmpty ||
+                                    !this.state.isEmailValid ||
+                                    !this.state.isPasswordValid
+                                } 
+                                className="boton-signUp" type="submit">Registrarme
+                            </button>
+                       </Link>
                     </form>
                 </div>
              </div>  

@@ -150,12 +150,12 @@ class Login extends React.Component{
                             {this.state.isDirty && !this.state.isEmailValid ?
                             (<p className="campoVacio">Debe ingresar un correo electrónico válido</p>): null}
                         </form>    
-                        <button type="submit" onClick={this.closeModal} className="boton-volver">cerrar</button>
+                        <button type="submit" onClick={this.closeModal} className="boton-volver">Volver</button>
                         <button 
                             disabled={!this.state.isEmailValid}
                             type="submit" 
                             className="boton-confirmar" 
-                            onClick={this.informationSend}>confirmar
+                            onClick={this.informationSend}>Enviar
                         </button>               
                     </div>
                 </div>

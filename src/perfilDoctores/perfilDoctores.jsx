@@ -9,7 +9,7 @@ class PerfilDoctores extends Component {
   };
 
   componentDidMount() {
-    fetch("https://randomuser.me/api/?results=12")
+    fetch("https://randomuser.me/api/?results=15")
       .then(response => response.json())
       .then(data => this.setState({ doctores: data.results }))
       .catch(error => {
