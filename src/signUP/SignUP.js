@@ -125,7 +125,7 @@ class SignUP extends React.Component{
                                 id="passwordConfirm"
                                 value={this.state.confirmPassword}
                                 onChange={this.handlePasswordConfirm}
-                                style={this.state.isDirty && this.state.isPasswordValid ? { border: '1px solid red' } : {}}
+                                style={this.state.isDirty && !this.state.isPasswordValid ? { border: '1px solid red' } : {}}
                             />
                             {this.state.isDirty && !this.state.isPasswordValid ?
                                 (<p className="campoVacio">La contraseña no coincide</p>): null}

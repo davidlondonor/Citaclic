@@ -26,10 +26,8 @@
   color: #111111;
   opacity: 1;
 }
-.MdChevronRight {
-  background: yellowgreen;
-}
 .iconHour {
+  color: #3576F8;
   align-self: center;
   width: 60px;
   text-align: center;
@@ -37,5 +35,11 @@
 .butttonHour {
   display: flex;
   justify-content: flex-end;
-  outline: 1px deeppink dashed;
+  background: #3576F8;
+  height: 30px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  border: 0;
+  cursor: pointer;
+  border: none;
 }
