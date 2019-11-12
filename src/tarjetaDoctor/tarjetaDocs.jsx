@@ -3,13 +3,11 @@ import { MdStarBorder } from "react-icons/md";
 import "./tarjetaDocs.css";
 import Hour from "./Hour";
 import Day from "./Day";
-import PerfilDoctores from "../perfilDoctores/perfilDoctores";
 
 class TarjetaDoc extends Component {
   state = { isOpen: false };
 
   handleOnClick = () => {
-    console.log("mirando que pasa por aca");
     this.setState(prevState => ({ isOpen: !prevState.isOpen }));
   };
 

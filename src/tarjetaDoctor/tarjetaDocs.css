@@ -52,11 +52,10 @@
 }
 .hourDocs {
   height: 40px;
-  flex-grow: 1;
 }
-.value{
-  padding: 0;
-  margin: 0;
+.hourDoc {
+  background-color: #0f93d5;
+  flex-grow: 1;
 }
 .aviso-doctor{
   display: flex;
