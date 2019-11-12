@@ -6,8 +6,8 @@ function ModalPagoCita({ handleOnClick, children }) {
     <div className='modalContainer'>
       <div className='modalContent'>
         <div className='posicion'>
-          <button className='button' onClick={handleOnClick}>
-            Cerrar
+          <button className='button-modal-pagos' onClick={handleOnClick}>
+            X
           </button>
         </div>
         {children}

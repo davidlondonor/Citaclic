@@ -47,8 +47,9 @@ class TarjetaDoc extends Component {
         </div>
 
         <div className='appointment'>
-          <h3 className='avalibleDoc'>Disponibilidad</h3>
           <p className='priceDoc'>Valor de la consulta</p>
+          <h2>120.000 COP</h2>
+          <h3 className='avalibleDoc'>Disponibilidad</h3>
           <Day />
           <div className='hourDocs'>
             <Hour

@@ -46,9 +46,15 @@
   width: 28px;
   height: 28px;
 }
-.priceDoc, .avalibleDoc{
+.priceDoc{
   text-align: left;
   color: #888888;
+  margin: 0;
+}
+.avalibleDoc{
+  text-align: left;
+  color: #888888;
+  margin-bottom: 20px;
 }
 .hourDocs {
   height: 40px;
