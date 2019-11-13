@@ -13,7 +13,7 @@ class PerfilDoctores extends Component {
       .then(response => response.json())
       .then(data => this.setState({ doctores: data.results }))
       .catch(error => {
-        alert("Hubo un pequeño error", error);
+        alert("error", error);
       });
   }
   render() {
