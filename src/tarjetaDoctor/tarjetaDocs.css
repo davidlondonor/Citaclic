@@ -57,6 +57,7 @@
   height: 40px;
   background-color: white;
   flex-grow: 1;
+  text-align: center;
 }
 .avalibleDoc {
   height: 40px;
