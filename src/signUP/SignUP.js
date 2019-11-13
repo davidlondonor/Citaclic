@@ -1,7 +1,6 @@
 import React from 'react';
 import './SignUP.css';
-import doctorRegistro from '../assets/doctorRegistro.png';
-import {Link} from 'react-router-dom';
+import doctorRegistro from '../assets/doctorRegistro.jpg';
 class SignUP extends React.Component{
     state={
         isDirty: false,
@@ -88,8 +87,8 @@ class SignUP extends React.Component{
     }
     render(){
         return(
-        <div className="container container-signup">             
-            <img alt="Registrarse" className="img-signup" src={doctorRegistro}></img>
+        <div className="container container-signup">             {/* 
+           */}  <img alt="Registrarse" className="img-signup" src={doctorRegistro}></img>
                <div className="right-container"> 
                 <div className="SignUP">
                     <form onSubmit={this.handleSubmit} className="form" autoComplete="off">
