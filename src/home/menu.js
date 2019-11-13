@@ -48,13 +48,14 @@ volverInicio = () => {
                 <div className="container">
                     <div className="menu">
                         <Link className="display-logo" to='/'><img className="img-logo" src={logocitaclic} alt="logo" /> </Link>
-                            <div>
+                            <div className="cerrar-sesion">
                                 {!this.props.isLoggedIn ?
                                 (<a href="#citaclic" className="nav">¿Por qué citaclic?</a>): null}
                                 {!this.props.isLoggedIn ? 
                                     (<a href="#nosotros" className="nav">Nosotros</a>) : null}  
                                 {this.props.isLoggedIn ? 
                                 (<a onClick={this.openModal}> <img src={exitImage} alt="Cerrar sesión" className="img-salir"></img></a> ): null}
+                                <a><p>Cerrar sesión</p></a>
                             </div>
                     </div>
                 </div>

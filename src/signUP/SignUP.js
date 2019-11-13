@@ -83,6 +83,9 @@ class SignUP extends React.Component{
             isPasswordValid: passwordConfirmValue === this.state.password
         })
     }  
+    handleRegistry = () => {
+        this.props.history.push('/perfilDoctores');
+    }
     render(){
         return(
         <div className="container container-signup">             
@@ -174,7 +177,7 @@ class SignUP extends React.Component{
                             <label htmlFor="passwordConfirm" className="text-label">Confirmar contraseña</label>
                             <input 
                                 className="stylesInput contraseña-margin" 
-                                type="password"
+                                type="password"handleSubmit
                                 id="passwordConfirm"
                                 value={this.state.confirmPassword}
                                 onChange={this.handlePasswordConfirm}
@@ -184,6 +187,7 @@ class SignUP extends React.Component{
                                 (<p className="campoVacio">La contraseña no coincide</p>): null}
                         </div>
                             <button
+                                onClick={this.handleRegistry}
                                 disabled={
                                     this.state.isNameEmpty ||
                                     this.state.isLastNameEmpty ||
