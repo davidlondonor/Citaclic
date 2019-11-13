@@ -1,6 +1,5 @@
 import React from "react";
 import "./modalPagoCita.css";
-
 function ModalPagoCita({ handleOnClick, children }) {
   return (
     <div className="modalContainer">
@@ -15,5 +14,4 @@ function ModalPagoCita({ handleOnClick, children }) {
     </div>
   );
 }
-
 export default ModalPagoCita;

@@ -11,9 +11,6 @@
   width: 821px;
   height: 680px;
 }
-.containerappointment {
-  color: hotpink;
-}
 .cardCardsDoc {
   width: 290px;
   height: 275px;
@@ -54,18 +51,30 @@
   height: 28px;
 }
 .priceDoc {
-  height: 40px;
-  background-color: white;
-  flex-grow: 1;
-  text-align: center;
+  text-align: left;
+  color: #888888;
+  margin: 0;
 }
 .avalibleDoc {
+  text-align: left;
+  color: #888888;
+  margin-bottom: 20px;
+}
+.hourDocs {
   height: 40px;
-  background-color: white;
-  flex-grow: 1;
 }
 .hourDoc {
-  height: 40px;
   background-color: #0f93d5;
   flex-grow: 1;
+}
+.aviso-doctor {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+.text-aviso {
+  color: #888888;
+  text-align: left;
+  font-size: 12px;
+  width: 240px;
 }

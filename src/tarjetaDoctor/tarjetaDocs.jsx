@@ -3,13 +3,11 @@ import { MdStarBorder } from "react-icons/md";
 import "./tarjetaDocs.css";
 import Hour from "./Hour";
 import Day from "./Day";
-import PerfilDoctores from "../perfilDoctores/perfilDoctores";
 
 class TarjetaDoc extends Component {
   state = { isOpen: false };
 
   handleOnClick = () => {
-    console.log("mirando que pasa por aca");
     this.setState(prevState => ({ isOpen: !prevState.isOpen }));
   };
 
@@ -38,11 +36,26 @@ class TarjetaDoc extends Component {
             </div>
             {/* <PerfilDoctores /> */}
           </div>
+          <div className="aviso-doctor">
+            <p className="text-aviso">
+              Una vez elijas el día y la hora para tu cita, serás redireccionado
+              a la plataforma de pagos, donde podrás seleccionar el método que
+              más te convenga.{" "}
+            </p>
+            <p className="text-aviso">
+              {" "}
+              Todos los profesionales han sido validados con anterioridad para
+              asegurarnos que cuenten con documentos que certifiquen sus
+              conocimientos y presten servicios en un lugar acorde al servicio
+              que ofrecen.
+            </p>
+          </div>
         </div>
 
         <div className="appointment">
-          <h3 className="avalibleDoc">Disponibilidad</h3>
           <p className="priceDoc">Valor de la consulta</p>
+          <h2>120.000 COP</h2>
+          <h3 className="avalibleDoc">Disponibilidad</h3>
           <Day />
           <div className="hourDocs">
             <Hour

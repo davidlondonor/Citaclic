@@ -1,7 +1,7 @@
 import React from "react";
 import { MdChevronRight } from "react-icons/md";
 import "./hour.css";
-import ModalPagoCita from "./ModalPagoCita";
+import ModalPagoCita from "./modalPagoCita";
 import pse from "../../src/assets/pse.png";
 import visa from "../assets/visa.png";
 import masterCard from "../assets/masterCard.png";
@@ -14,7 +14,7 @@ const Hour = ({ horaInicio, horaFinal, handleFunction, state }) => {
       <MdChevronRight className="iconHour" />
       <div className="firstHour">{horaFinal}</div>
       <button className="buttonHour" type="button" onClick={handleFunction}>
-        {state.isOpen ? "Close" : "Open"}
+        {state.isOpen ? "Close" : "Confirmar"}
       </button>
       {state.isOpen && (
         <ModalPagoCita

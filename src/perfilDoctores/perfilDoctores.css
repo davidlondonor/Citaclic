@@ -7,14 +7,10 @@
 .containerDoc {
   flex-direction: row;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
 }
 .containerCards {
-  background: tomato;
   display: flex;
   flex-direction: row;
-  width: 900px;
 }
 .cardCards {
   background-color: white;
@@ -28,19 +24,20 @@
   margin: 2px;
 }
 .photoCards {
+  width: 220px;
+  height: 167px;
   margin: 0;
 }
 .nameCards {
-  margin: 0;
   font-size: 1.5rem;
-  padding: 2px;
   color: #111111;
   text-decoration: none;
+  margin-top: 10px;
 
 }
 .estilos-img{
   border-radius: 6px;
-  width: 180px;
+  width: 150px;
 }
 .profesionalCards {
   font: 0.7em sans-serif;
@@ -56,8 +53,8 @@
   font-weight: 400;
 }
 .detailsCards {
-  font: 0.9em sans-serif;
   font-weight: 600;
+  margin-top: 100px;
 }
 .starCards {
   margin: 0;
