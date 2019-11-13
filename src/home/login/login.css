@@ -40,6 +40,12 @@
     border: 0;
     cursor: pointer;
   }
+  .boton:disabled{
+    background: rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, 0.12);
+    cursor: default;
+    pointer-events: none;
+  }
   .registry-text{
     color: #888888;
     text-align: center;
@@ -119,7 +125,12 @@
     cursor: pointer;
     margin-top: 10px;
     border: none;
-
+}
+.boton-confirmar:disabled{
+  background: rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.12);
+  cursor: default;
+  pointer-events: none;
 }
 .campoVacio{
   font-size: 12px;

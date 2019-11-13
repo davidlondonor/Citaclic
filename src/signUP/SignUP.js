@@ -183,7 +183,6 @@ class SignUP extends React.Component{
                             {this.state.isDirty && this.state.password !== "" && !this.state.isPasswordValid ?
                                 (<p className="campoVacio">La contraseña no coincide</p>): null}
                         </div>
-                       <Link to="/perfilDoctores">
                             <button
                                 disabled={
                                     this.state.isNameEmpty ||
@@ -193,7 +192,6 @@ class SignUP extends React.Component{
                                 } 
                                 className="boton-signUp" type="submit">Registrarme
                             </button>
-                       </Link>
                     </form>
                 </div>
              </div>  
