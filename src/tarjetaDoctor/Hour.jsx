@@ -24,7 +24,12 @@ const Hour = ({ horaInicio, horaFinal, handleFunction, state }) => {
           <h1 className="tituloModal">Realiza tu pago en</h1>
           <div className="logoContainer">
             <img className="logoModal" src={pse} alt="Logo PSE" />
-            <img className="logoModal visa" src={visa} alt="Logo Visa" />
+            <img
+              className="logoModal visa"
+              href="www.google.com"
+              src={visa}
+              alt="Logo Visa"
+            />
             <img
               className="logoModal"
               src={masterCard}

@@ -1,5 +1,5 @@
 .modalContainer {
-  background-color: #0088f7;
+  background-color: rgba(72, 72, 72, 0.1);
   opacity: 80%;
   position: absolute;
   top: 0;
@@ -18,7 +18,7 @@
   width: 400px;
   height: 300px;
   position: relative;
-  border-radius: 5%;
+  border-radius: 5px;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -26,11 +26,15 @@
 
 .posicion {
   border-radius: 50%;
-  background-color: #0088f9;
   position: absolute;
   right: -12px;
   top: -12px;
   width: 24px;
   height: 24px;
   display: flex;
+}
+.buttonModalSalir {
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
 }
