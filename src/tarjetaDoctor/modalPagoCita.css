@@ -16,7 +16,7 @@
 .modalContent {
   background-color: white;
   width: 400px;
-  height: 300px;
+  padding: 0;
   position: relative;
   border-radius: 5px;
   align-self: center;
@@ -30,7 +30,7 @@
   right: -12px;
   top: -12px;
   width: 24px;
-  height: 24px;
+  height: 20px;
   display: flex;
 }
 .buttonModalSalir {

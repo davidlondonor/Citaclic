@@ -7,21 +7,21 @@ import visa from "../assets/visa.png";
 import masterCard from "../assets/masterCard.png";
 import nequi from "../assets/nequi.svg";
 
-const Hour = ({ horaInicio, horaFinal, handleFunction, state }) => {
+const Hour = ({ horaInicio, horaFinal, handleFunction, isOpen }) => {
   return (
     <div className="scheduleHour">
       <div className="firstHour">{horaInicio}</div>
       <MdChevronRight className="iconHour" />
       <div className="firstHour">{horaFinal}</div>
       <button className="buttonHour" type="button" onClick={handleFunction}>
-        {state.isOpen ? "Confirmar" : "Confirmar"}
+        Confirmar
       </button>
-      {state.isOpen && (
+      {isOpen && (
         <ModalPagoCita
           className="estiloModalPagoCita"
           handleOnClick={handleFunction}
         >
-          <h1 className="tituloModal">Realiza tu pago en</h1>
+          <h3 className="tituloModal">Método de pago</h3>
           <div className="logoContainer">
             <img className="logoModal" src={pse} alt="Logo PSE" />
             <img
@@ -30,13 +30,16 @@ const Hour = ({ horaInicio, horaFinal, handleFunction, state }) => {
               src={visa}
               alt="Logo Visa"
             />
+            </div>
+            <div className="logoContainer">
             <img
               className="logoModal"
               src={masterCard}
               alt="Logo Master Card"
             />
             <img className="logoModal" src={nequi} alt="Logo Nequi" />
-          </div>
+
+            </div>
         </ModalPagoCita>
       )}
     </div>

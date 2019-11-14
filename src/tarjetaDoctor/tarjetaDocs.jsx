@@ -57,61 +57,61 @@ class TarjetaDoc extends Component {
           <Day />
           <div className="hourDocs">
             <Hour
-              state={this.state}
+              isOpen={this.state.isOpen}
               handleFunction={this.handleOnClick}
               horaInicio={"8:30"}
               horaFinal={"9:25"}
             />
             <Hour
-              state={this.state}
+              isOpen={this.state.isOpen}
               handleFunction={this.handleOnClick}
               horaInicio={"9:30"}
               horaFinal={"10:25"}
             />
             <Hour
-              state={this.state}
+              isOpen={this.state.isOpen}
               handleFunction={this.handleOnClick}
               horaInicio={"10:30"}
               horaFinal={"11:25"}
             />
             <Hour
-              state={this.state}
+              isOpen={this.state.isOpen}
               handleFunction={this.handleOnClick}
               horaInicio={"11:30"}
               horaFinal={"12:25"}
             />
             <Hour
-              state={this.state}
+              isOpen={this.state.isOpen}
               handleFunction={this.handleOnClick}
               horaInicio={"1:30"}
               horaFinal={"2:25"}
             />
             <Hour
-              state={this.state}
+              isOpen={this.state.isOpen}
               handleFunction={this.handleOnClick}
               horaInicio={"3:30"}
               horaFinal={"4:25"}
             />
             <Hour
-              state={this.state}
+              isOpen={this.state.isOpen}              
               handleFunction={this.handleOnClick}
               horaInicio={"4:30"}
               horaFinal={"5:25"}
             />
             <Hour
-              state={this.state}
+              isOpen={this.state.isOpen}              
               handleFunction={this.handleOnClick}
               horaInicio={"5:30"}
               horaFinal={"6:25"}
             />
             <Hour
-              state={this.state}
+              isOpen={this.state.isOpen}              
               handleFunction={this.handleOnClick}
               horaInicio={"7:30"}
               horaFinal={"8:25"}
             />
             <Hour
-              state={this.state}
+              isOpen={this.state.isOpen}              
               handleFunction={this.handleOnClick}
               horaInicio={"8:30"}
               horaFinal={"9:25"}
