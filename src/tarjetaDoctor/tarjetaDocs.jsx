@@ -19,7 +19,7 @@ class TarjetaDoc extends Component {
             <div className="photoCardsDoc">
               <img
                 src="https://i.ibb.co/gT0S0KG/foto-4.png"
-                alt="un texto"
+                alt="Doctora Manuela Arango"
               ></img>
             </div>
             <div className="detailsDCards">

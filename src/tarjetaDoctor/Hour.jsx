@@ -2,7 +2,7 @@ import React from "react";
 import { MdChevronRight } from "react-icons/md";
 import "./hour.css";
 import ModalPagoCita from "./modalPagoCita";
-import pse from "../../src/assets/pse.png";
+import pse from "../assets/pse.png";
 import visa from "../assets/visa.png";
 import masterCard from "../assets/masterCard.png";
 import nequi from "../assets/nequi.svg";
