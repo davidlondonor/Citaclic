@@ -62,6 +62,7 @@ class PerfilDoctores extends Component {
                 />
               </div>
               </Link>
+              
               <div className='detailsDCards'>
                 <Link
                   to={`/doctores/${person.login.uuid}`}

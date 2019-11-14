@@ -17,6 +17,7 @@
   }
   .display-logo{
     display: flex;
+    padding-left: 22px;
   }
   .container-modal-salir{
     display: flex;
