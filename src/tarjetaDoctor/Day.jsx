@@ -15,22 +15,22 @@ class Day extends Component {
           {/* <h3>{this.props.subtitle}</h3> */}
           {this.props.mytext}
           <a href="#" className="estilos-dias" mytext='Dia 1' subtitle='Prueba 5' onClick={this.togggleShow}>
-            Dia 1
+            Lúnes
           </a>
           <a href="#" className="estilos-dias" mytext='Dia 2' subtitle='Prueba 5' onClick={this.togggleShow}>
-            Dia 2
+            Martes
           </a>
           <a href="#" className="estilos-dias" mytext='Dia 3' subtitle='Prueba 5' onClick={this.togggleShow}>
-            Dia 3
+            Miércoles
           </a>
           <a href="#" className="estilos-dias" mytext='Dia 4' subtitle='Prueba 5' onClick={this.togggleShow}>
-            Dia 4
+            Jueves
           </a>
           <a href="#" className="estilos-dias" mytext='Dia 5' subtitle='Prueba 5' onClick={this.togggleShow}>
-            Dia 5
+            Viernes
           </a>
           <a href="#" className="estilos-dias" mytext='Dia 6' subtitle='Prueba 5' onClick={this.togggleShow}>
-            Dia 6
+            Sábado
           </a>
         </div>
       );
