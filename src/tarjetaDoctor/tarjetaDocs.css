@@ -12,13 +12,17 @@
   height: 680px;
 }
 .cardCardsDoc {
-  background-color: white;
   width: 290px;
   height: 275px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   padding: 5px;
+}
+.photoCardsDoc {
+  width: 290px;
+  height: 220px;
+  margin: 0;
 }
 .nameCardsDoc {
   margin: 0;
@@ -47,12 +51,12 @@
   width: 15px;
   height: 15px;
 }
-.priceDoc{
+.priceDoc {
   text-align: left;
   color: #888888;
   margin: 0;
 }
-.avalibleDoc{
+.avalibleDoc {
   text-align: left;
   color: #888888;
   margin-bottom: 20px;
@@ -64,12 +68,12 @@
   background-color: #0f93d5;
   flex-grow: 1;
 }
-.aviso-doctor{
+.aviso-doctor {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
 }
-.text-aviso{
+.text-aviso {
   color: #888888;
   text-align: left;
   font-size: 12px;
