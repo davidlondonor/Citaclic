@@ -1,8 +1,6 @@
 import React from 'react';
 import './SignUP.css';
-import doctorRegistro from '../assets/doctorRegistro.png';
-import {Link} from 'react-router-dom';
-
+import doctorRegistro from '../assets/doctorRegistro.jpg';
 class SignUP extends React.Component{
     state={
         isDirty: false,
@@ -15,8 +13,6 @@ class SignUP extends React.Component{
         password: "",
         confirmPassword: "",
         isPasswordValid: false,
-        mobile: "",
-        isMobileValid: false,
         document: "",
         isDocumentValid: false,
         numberDocument: "",
@@ -32,14 +28,6 @@ class SignUP extends React.Component{
             isDirty: true,
             isNameEmpty: nameValue === "",
             name: nameValue
-        })
-    }
-    handleMobileChange = (event) =>{
-        const mobileValue= event.target.value;
-        this.setState({
-            isDirty: true,
-            isMobileValid: mobileValue === "",
-            mobile: mobileValue
         })
     }
     handleDocumentChange = (event) =>{
@@ -94,10 +82,13 @@ class SignUP extends React.Component{
             isPasswordValid: passwordConfirmValue === this.state.password
         })
     }  
+    handleRegistry = () => {
+        this.props.history.push('/perfilDoctores');
+    }
     render(){
         return(
-        <div className="container container-signup">             
-            <img alt="Registrarse" className="img-signup" src={doctorRegistro}></img>
+        <div className="container container-signup">             {/* 
+           */}  <img alt="Registrarse" className="img-signup" src={doctorRegistro}></img>
                <div className="right-container"> 
                 <div className="SignUP">
                     <form onSubmit={this.handleSubmit} className="form" autoComplete="off">
@@ -173,19 +164,6 @@ class SignUP extends React.Component{
                                 {this.state.isDirty && this.state.email !== '' && !this.state.isEmailValid ?
                             (<p className="campoVacio">Debe ingresar un correo electrónico válido</p>): null}
                         </div>
-                        <div className="mobile">
-                            <label htmlFor="mobile" className="text-label">Celular</label>
-                            <input
-                                className="stylesInput" 
-                                type="text"
-                                id="mobile"
-                                value={this.state.mobile}
-                                onChange={this.handleMobileChange}
-                                style={this.state.isDirty && this.state.isMobileValid ? { border: '1px solid red' } : {}}
-                             />
-                            {this.state.isDirty && this.state.isMobileValid ? 
-                            (<p className="campoVacio">El campo no puede estar vacío</p> ): null}
-                        </div>
                         <div className="password">
                             <label htmlFor="password" className="text-label">Contraseña</label>
                             <input
@@ -202,13 +180,13 @@ class SignUP extends React.Component{
                                 id="passwordConfirm"
                                 value={this.state.confirmPassword}
                                 onChange={this.handlePasswordConfirm}
-                                style={this.state.isDirty && !this.state.isPasswordValid ? { border: '1px solid red' } : {}}
+                                style={this.state.isDirty && this.state.password !== "" && !this.state.isPasswordValid ? { border: '1px solid red' } : {}}
                             />
-                            {this.state.isDirty && !this.state.isPasswordValid ?
+                            {this.state.isDirty && this.state.password !== "" && !this.state.isPasswordValid ?
                                 (<p className="campoVacio">La contraseña no coincide</p>): null}
                         </div>
-                       <Link to="/perfilDoctores">
                             <button
+                                onClick={this.handleRegistry}
                                 disabled={
                                     this.state.isNameEmpty ||
                                     this.state.isLastNameEmpty ||
@@ -217,7 +195,6 @@ class SignUP extends React.Component{
                                 } 
                                 className="boton-signUp" type="submit">Registrarme
                             </button>
-                       </Link>
                     </form>
                 </div>
              </div>  

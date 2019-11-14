@@ -4,13 +4,9 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.containerDoc {
+.containerDoc, .containerCards {
   flex-direction: row;
   display: flex;
-}
-.containerCards {
-  display: flex;
-  flex-direction: row;
 }
 .cardCards {
   background-color: white;
@@ -51,6 +47,7 @@
   padding: 1;
   color: #888888;
   font-weight: 400;
+  font-size: 15px;
 }
 .detailsCards {
   font-weight: 600;

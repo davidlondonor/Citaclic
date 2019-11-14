@@ -81,6 +81,7 @@ class Login extends React.Component{
         this.props.history.push('/perfilDoctores');
     }
 
+
     render(){
         return(
         <div className="container">
@@ -118,6 +119,7 @@ class Login extends React.Component{
                     </div>
                     <div className="start-boton">
                         <button 
+                            disabled={this.state.userName == "" || this.state.password == ""}
                             className="boton" 
                             type="submit"> Iniciar sesión
                         </button>

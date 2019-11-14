@@ -1,5 +1,5 @@
 .login{
-    top: 30%;
+    top: 40%;
     right: 80px;
     padding: 20px 20px;
     width: 270px;
@@ -119,7 +119,12 @@
     cursor: pointer;
     margin-top: 10px;
     border: none;
-
+}
+.boton-confirmar:disabled, .boton:disabled{
+  background: rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.12);
+  cursor: default;
+  pointer-events: none;
 }
 .campoVacio{
   font-size: 12px;

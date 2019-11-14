@@ -44,10 +44,8 @@ class TarjetaDoc extends Component {
             </p>
             <p className="text-aviso">
               {" "}
-              Todos los profesionales han sido validados con anterioridad para
-              asegurarnos que cuenten con documentos que certifiquen sus
-              conocimientos y presten servicios en un lugar acorde al servicio
-              que ofrecen.
+              Todos los profesionales han sido validados para ofrecerte un
+              servicio de alta calidad.
             </p>
           </div>
         </div>

@@ -67,3 +67,10 @@
     width: 20px;
     height: 20px;
   }
+.cerrar-sesion{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #111111;
+  margin-right: 10px;
+}
