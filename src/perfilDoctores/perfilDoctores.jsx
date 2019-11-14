@@ -49,6 +49,11 @@ class PerfilDoctores extends Component {
         {this.state.doctores.map((person, index) => (
           <div className='containerDoc' key={index}>
             <div className='cardCards'>
+            <Link
+                  to={`/doctores/${person.login.uuid}`}
+                  href='#'
+                  className='nameCards'
+                >             
               <div className='photoCards'>
                 <img
                   className='estilos-img'
@@ -56,6 +61,7 @@ class PerfilDoctores extends Component {
                   alt=''
                 />
               </div>
+              </Link>
               <div className='detailsDCards'>
                 <Link
                   to={`/doctores/${person.login.uuid}`}
