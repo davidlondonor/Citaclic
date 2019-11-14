@@ -4,13 +4,9 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.containerDoc {
+.containerDoc, .containerCards {
   flex-direction: row;
   display: flex;
-}
-.containerCards {
-  display: flex;
-  flex-direction: row;
 }
 .cardCards {
   background-color: white;

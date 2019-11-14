@@ -176,7 +176,7 @@ class SignUP extends React.Component{
                             <label htmlFor="passwordConfirm" className="text-label">Confirmar contraseña</label>
                             <input 
                                 className="stylesInput contraseña-margin" 
-                                type="password"handleSubmit
+                                type="password"
                                 id="passwordConfirm"
                                 value={this.state.confirmPassword}
                                 onChange={this.handlePasswordConfirm}
