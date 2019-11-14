@@ -48,13 +48,14 @@ volverInicio = () => {
                 <div className="container">
                     <div className="menu">
                         <Link className="display-logo" to='/'><img className="img-logo" src={logocitaclic} alt="logo" /> </Link>
-                            <div>
+                            <div className="cerrar-sesion">
                                 {!this.props.isLoggedIn ?
                                 (<a href="#citaclic" className="nav">¿Por qué citaclic?</a>): null}
                                 {!this.props.isLoggedIn ? 
-                                    (<a href="#nosotros" className="nav">Nosotros</a>) : null}
-                                {!this.props.isLoggedIn ?
-                                (<a href="ayuda" className="nav">Ayuda</a>): null}    
+                                    (<a href="#nosotros" className="nav">Nosotros</a>) : null}  
+                                {this.props.isLoggedIn ?
+                                (<a href="#" onClick={this.openModal} className="cerrar-sesion"><p>Cerrar sesión</p></a>
+                                ) : null}
                                 {this.props.isLoggedIn ? 
                                 (<a onClick={this.openModal}> <img src={exitImage} alt="Cerrar sesión" className="img-salir"></img></a> ): null}
                             </div>
@@ -72,13 +73,13 @@ volverInicio = () => {
                                 <button 
                                     type="button" 
                                     onClick={this.closeModal} 
-                                    className="boton-volver-salir">volver
+                                    className="boton-volver-salir">Volver
                                 </button>
                                 <button 
                                     type="button" 
                                     onClick={this.volverInicio}
                                     className="boton-confirmar-salir" 
-                                    >confirmar
+                                    >Confirmar
                                 </button>               
                             </div>
                         </div>

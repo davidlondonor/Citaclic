@@ -40,9 +40,8 @@ class TarjetaDoc extends Component {
             <p className="text-aviso">Una vez elijas el día y la hora para tu cita, serás 
             redireccionado a la plataforma de pagos, 
             donde podrás seleccionar el método que más te convenga. </p>
-            <p className="text-aviso"> Todos los profesionales han sido validados con anterioridad para asegurarnos 
-            que cuenten con documentos que certifiquen sus conocimientos y presten servicios 
-            en un lugar acorde al servicio que ofrecen.</p>
+            <p className="text-aviso"> Todos los profesionales han sido validados para ofrecerte un servicio
+            de alta calidad.</p>
           </div>
         </div>
 

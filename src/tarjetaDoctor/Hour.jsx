@@ -10,7 +10,7 @@ const Hour = ({ horaInicio, horaFinal, handleFunction, state }) => {
       <MdChevronRight className='iconHour' />
       <div className='firstHour'>{horaFinal}</div>
       <button className='buttonHour' type='button' onClick={handleFunction}>
-        {state.isOpen ? "Close" : "Confirmar"}
+        {state.isOpen ? "Volver" : "Confirmar"}
       </button>
       {state.isOpen && (
         <ModalPagoCita handleOnClick={handleFunction}>

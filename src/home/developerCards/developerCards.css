@@ -1,9 +1,9 @@
 .cards{
   display: flex;
   justify-content: space-evenly;
-  background-color: #F7F7FA;
-  height: 450px;
+  background-color: #FFFFFF;
   align-items: center;
+  padding: 60px;
 }
 .card{
   background-color: #FFFFFF;
