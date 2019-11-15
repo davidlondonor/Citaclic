@@ -9,13 +9,14 @@ class Day extends Component {
   };
 
   render() {
+    
     if (this.state.show) {
       return (
         <div className='dayxDay' id='Hello'>
           {/* <h3>{this.props.subtitle}</h3> */}
           {this.props.mytext}
           <a href="#" className="estilos-dias" mytext='Dia 1' subtitle='Prueba 5' onClick={this.togggleShow}>
-            Lúnes
+            Lunes
           </a>
           <a href="#" className="estilos-dias" mytext='Dia 2' subtitle='Prueba 5' onClick={this.togggleShow}>
             Martes

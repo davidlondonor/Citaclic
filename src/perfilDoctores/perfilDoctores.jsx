@@ -19,7 +19,7 @@ class PerfilDoctores extends Component {
   render() {
     return (
       <div className='contenedor-general'>
-        <div className='categorias'>
+        {/* <div className='categorias'>
           <a href='#' className='estilos-a'>
             Dermatología
           </a>
@@ -44,14 +44,14 @@ class PerfilDoctores extends Component {
           <a href='#' className='estilos-a'>
             Ginecología
           </a>
-        </div>
+        </div> */}
+
 
         {this.state.doctores.map((person, index) => (
           <div className='containerDoc' key={index}>
             <div className='cardCards'>
             <Link
                   to={`/doctores/${person.login.uuid}`}
-                  href='#'
                   className='nameCards'
                 >             
               <div className='photoCards'>
@@ -66,7 +66,6 @@ class PerfilDoctores extends Component {
               <div className='detailsDCards'>
                 <Link
                   to={`/doctores/${person.login.uuid}`}
-                  href='#'
                   className='nameCards'
                 >
                   {person.name.first}
