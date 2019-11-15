@@ -9,6 +9,7 @@ class Day extends Component {
   };
 
   render() {
+    
     if (this.state.show) {
       return (
         <div className='dayxDay' id='Hello'>
