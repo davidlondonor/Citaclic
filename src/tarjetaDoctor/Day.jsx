@@ -15,7 +15,7 @@ class Day extends Component {
           {/* <h3>{this.props.subtitle}</h3> */}
           {this.props.mytext}
           <a href="#" className="estilos-dias" mytext='Dia 1' subtitle='Prueba 5' onClick={this.togggleShow}>
-            Lúnes
+            Lunes
           </a>
           <a href="#" className="estilos-dias" mytext='Dia 2' subtitle='Prueba 5' onClick={this.togggleShow}>
             Martes
