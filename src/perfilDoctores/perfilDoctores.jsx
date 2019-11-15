@@ -52,7 +52,6 @@ class PerfilDoctores extends Component {
             <div className='cardCards'>
             <Link
                   to={`/doctores/${person.login.uuid}`}
-                  href='#'
                   className='nameCards'
                 >             
               <div className='photoCards'>
