@@ -19,7 +19,7 @@ class PerfilDoctores extends Component {
   render() {
     return (
       <div className='contenedor-general'>
-        <div className='categorias'>
+        {/* <div className='categorias'>
           <a href='#' className='estilos-a'>
             Dermatología
           </a>
@@ -44,7 +44,7 @@ class PerfilDoctores extends Component {
           <a href='#' className='estilos-a'>
             Ginecología
           </a>
-        </div>
+        </div> */}
 
         {this.state.doctores.map((person, index) => (
           <div className='containerDoc' key={index}>
