@@ -45,6 +45,7 @@ class PerfilDoctores extends Component {
             Ginecología
           </a>
         </div> */}
+        
 
         {this.state.doctores.map((person, index) => (
           <div className='containerDoc' key={index}>
