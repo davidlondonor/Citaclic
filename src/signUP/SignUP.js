@@ -119,6 +119,7 @@ class SignUP extends React.Component{
                             {this.state.isDirty && this.state.isLastNameEmpty ?
                             (<p className="campoVacio">El campo no puede estar vacío</p>): null}
                         </div>
+                        
                         {/* <div className="document-type">
                             <label htmlFor="tipo-documento" className="text-label">Tipo de identificación</label>
                             <input 
